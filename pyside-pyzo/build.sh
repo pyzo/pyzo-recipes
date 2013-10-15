@@ -135,5 +135,15 @@ $PYTHON $RECIPE_DIR/build_from_installed.py $PREFIX/bin/pyside-uic $PREFIX/bin
 $PYTHON $RECIPE_DIR/build_from_installed.py $PREFIX/bin/pyside-rcc $PREFIX/bin
 $PYTHON $RECIPE_DIR/build_from_installed.py $PREFIX/bin/shiboken $PREFIX/bin
 
-# Install qt_menu.nib
-$PYTHON $RECIPE_DIR/qt_menu_nib.py
+# ------ Some last fixes
+
+if [ `uname` == Darwin ]; then
+    # Install qt_menu.nib
+    $PYTHON $RECIPE_DIR/install_qt_menu_nib.py
+fi
+
+if [ `uname` == Linux ]; then
+    # Install qt.conf
+    $PYTHON $RECIPE_DIR/install_qt_conf.py
+fi
+
