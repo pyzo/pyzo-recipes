@@ -1,6 +1,7 @@
 #!/bin/bash
 
-#export PATH=$PATH:$PREFIX/bin
+# Test if we can import pyzolib, otherwise our build will fail at the end
+$PYTHON $RECIPE_DIR/build_from_installed.py
 
 # Go into dir that contains
 # shiboken, pyside and pyside tools
@@ -122,17 +123,17 @@ make install
 
 # ------ Fixing up dependencies and RPATH and all that
 
-$PYTHON ~/py/pyzo_build/build_from_installed.py shiboken
-$PYTHON ~/py/pyzo_build/build_from_installed.py PySide
+$PYTHON $RECIPE_DIR/build_from_installed.py shiboken
+$PYTHON $RECIPE_DIR/build_from_installed.py PySide
 
-$PYTHON ~/py/pyzo_build/build_from_installed.py /opt/local/bin/linguist $PREFIX/bin
-$PYTHON ~/py/pyzo_build/build_from_installed.py /opt/local/bin/lrelease $PREFIX/bin
-$PYTHON ~/py/pyzo_build/build_from_installed.py /opt/local/bin/lupdate $PREFIX/bin
+$PYTHON $RECIPE_DIR/build_from_installed.py /opt/local/bin/linguist $PREFIX/bin
+$PYTHON $RECIPE_DIR/build_from_installed.py /opt/local/bin/lrelease $PREFIX/bin
+$PYTHON $RECIPE_DIR/build_from_installed.py /opt/local/bin/lupdate $PREFIX/bin
 
-$PYTHON ~/py/pyzo_build/build_from_installed.py $PREFIX/bin/pyside-lupdate $PREFIX/bin
-$PYTHON ~/py/pyzo_build/build_from_installed.py $PREFIX/bin/pyside-uic $PREFIX/bin
-$PYTHON ~/py/pyzo_build/build_from_installed.py $PREFIX/bin/pyside-rcc $PREFIX/bin
-$PYTHON ~/py/pyzo_build/build_from_installed.py $PREFIX/bin/shiboken $PREFIX/bin
+$PYTHON $RECIPE_DIR/build_from_installed.py $PREFIX/bin/pyside-lupdate $PREFIX/bin
+$PYTHON $RECIPE_DIR/build_from_installed.py $PREFIX/bin/pyside-uic $PREFIX/bin
+$PYTHON $RECIPE_DIR/build_from_installed.py $PREFIX/bin/pyside-rcc $PREFIX/bin
+$PYTHON $RECIPE_DIR/build_from_installed.py $PREFIX/bin/shiboken $PREFIX/bin
 
 # Install qt_menu.nib
 $PYTHON $RECIPE_DIR/qt_menu_nib.py
