@@ -7,6 +7,12 @@ $PYTHON $RECIPE_DIR/build_from_installed.py
 # shiboken, pyside and pyside tools
 cd sources
 
+# Make Qt be found on Linux
+if [ `uname` == Linux ]; then    
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/Trolltech/Qt-4.8.5/lib/
+    export PATH=/usr/local/Trolltech/Qt-4.8.5/bin/:$PATH
+fi
+
 # ------------------------- PATCHELF
 cd patchelf # So next cd .. works
 if [ `uname` != Darwin ]; then

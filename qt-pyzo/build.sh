@@ -10,6 +10,7 @@ if [ `uname` == Linux ]; then
     sudo apt-get -y install libgl1-mesa-dev libglu1-mesa-dev
     sudo apt-get -y install libz-dev libbz2-dev liblzma-dev lzma-dev
     sudo apt-get -y install libssl-dev libgdb-dev libgdbm-dev libreadline-dev
+    sudo apt-get -y install libXml2-dev libXslt-dev
 
     chmod +x configure
     ./configure \
