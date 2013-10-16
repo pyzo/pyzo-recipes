@@ -83,7 +83,7 @@ class Module:
         
         if not self.ispkg:
             ext = os.path.splitext(self.path)[1].lower()
-            if ext in ['.so', '.pyd', '.dll', '.dylib']: 
+            if ext in ['', '.so', '.pyd', '.dll', '.dylib']: 
                 dependencies = DependentFilesHelper(self.path)
                 dependencies.get(self.path)
                 count += dependencies.install()
@@ -95,7 +95,7 @@ class Module:
                 for fname in filenames:
                     fname = os.path.join(dirpath, fname)
                     ext = os.path.splitext(fname)[1].lower()
-                    if ext in ['.so', '.pyd', '.dll', '.dylib']: 
+                    if ext in ['', '.so', '.pyd', '.dll', '.dylib']: 
                         dependencies.get(fname)
                 count += dependencies.install()
                 newfiles.update(dependencies._newFiles)
@@ -219,7 +219,7 @@ class DependentFilesHelper:
         # If any, add them to our set and modify the lib's RPATH
         if files:
             self._dependentFiles.update(files) 
-            self._dependingFiles.add(path)
+        self._dependingFiles.add(path)
         # Done
         return files
     
