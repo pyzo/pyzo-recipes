@@ -433,6 +433,12 @@ if __name__ == '__main__':
         mod.install(dest)
         mod.install_dependencies()
     else:
-        print('build_from_installed can import pyzolib')
+        try:
+            command = dllutils.get_command_to_set_search_path()
+        except Exception:
+            print('Can import pyzolib, but cannot get command to set search path yet.')
+        else:
+            print('Command to set search path is: %s' % command)
+       
     
     
