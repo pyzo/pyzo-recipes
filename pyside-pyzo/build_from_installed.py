@@ -259,7 +259,10 @@ class DependentFilesHelper:
         dependerDir = os.path.dirname(path)
         relDir = os.path.relpath(self._dstDir, dependerDir)
         # Set it!
-        dllutils.set_search_path(path, relDir)
+        try:
+            dllutils.set_search_path(path, relDir)
+        except Exception as err:
+            print('Could not set search path for %s' % path)
     
     
     ## Taken/inspired from cx_Freeze
