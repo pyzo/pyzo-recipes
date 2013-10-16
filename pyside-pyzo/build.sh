@@ -7,6 +7,7 @@ $PYTHON $RECIPE_DIR/build_from_installed.py
 # shiboken, pyside and pyside tools
 cd sources
 
+# NOTE: SET QT VERSION BELOW AND ALSO NEAR END
 # Make Qt be found on Linux
 if [ `uname` == Linux ]; then    
     export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/Trolltech/Qt-4.8.5/lib/
@@ -132,9 +133,16 @@ make install
 $PYTHON $RECIPE_DIR/build_from_installed.py shiboken
 $PYTHON $RECIPE_DIR/build_from_installed.py PySide
 
-$PYTHON $RECIPE_DIR/build_from_installed.py /opt/local/bin/linguist $PREFIX/bin
-$PYTHON $RECIPE_DIR/build_from_installed.py /opt/local/bin/lrelease $PREFIX/bin
-$PYTHON $RECIPE_DIR/build_from_installed.py /opt/local/bin/lupdate $PREFIX/bin
+if [ `uname` == Linux ]; then
+    $PYTHON $RECIPE_DIR/build_from_installed.py /usr/local/Trolltech/Qt-4.8.5/bin/linguist $PREFIX/bin
+    $PYTHON $RECIPE_DIR/build_from_installed.py /usr/local/Trolltech/Qt-4.8.5/bin/lrelease $PREFIX/bin
+    $PYTHON $RECIPE_DIR/build_from_installed.py /usr/local/Trolltech/Qt-4.8.5/bin/lupdate $PREFIX/bin
+fi
+if [ `uname` == Darwin ]; then
+    $PYTHON $RECIPE_DIR/build_from_installed.py /opt/local/bin/linguist $PREFIX/bin
+    $PYTHON $RECIPE_DIR/build_from_installed.py /opt/local/bin/lrelease $PREFIX/bin
+    $PYTHON $RECIPE_DIR/build_from_installed.py /opt/local/bin/lupdate $PREFIX/bin
+fi
 
 $PYTHON $RECIPE_DIR/build_from_installed.py $PREFIX/bin/pyside-lupdate $PREFIX/bin
 $PYTHON $RECIPE_DIR/build_from_installed.py $PREFIX/bin/pyside-uic $PREFIX/bin
