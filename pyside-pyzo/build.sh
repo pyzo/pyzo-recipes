@@ -130,6 +130,9 @@ make install
 
 # ------ Fixing up dependencies and RPATH and all that
 
+# Logging: show command to set search path
+$PYTHON $RECIPE_DIR/build_from_installed.py
+
 $PYTHON $RECIPE_DIR/build_from_installed.py shiboken
 $PYTHON $RECIPE_DIR/build_from_installed.py PySide
 
