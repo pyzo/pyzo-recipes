@@ -101,19 +101,16 @@ class Module:
                 newfiles.update(dependencies._newFiles)
             print('Installed %i dependencies' % count)
         
-        # Recursively check for dependencies in the lib folder
+        # Recursively check for dependencies in the lib folder        
         count = 0
-        recDependencies = DependentFilesHelper(LIB_DIR)
-        for filename in newfiles:
-            recDependencies.get(filename)
-        count += recDependencies.install()
-        # Take 2
-        newfiles = recDependencies._newFiles
-        recDependencies = DependentFilesHelper(LIB_DIR)
-        for filename in newfiles:
-            recDependencies.get(filename)
-        count += recDependencies.install()
-        #
+        for i in range(5): # at most five times
+            recDependencies = DependentFilesHelper(LIB_DIR)
+            for filename in newfiles:
+                recDependencies.get(filename)
+            count += recDependencies.install()
+            newfiles = recDependencies._newFiles
+            if not newfiles:
+                break
         print('Installed %i more dependencies' % count)
 
 
