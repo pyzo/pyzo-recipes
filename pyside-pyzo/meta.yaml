@@ -12,7 +12,7 @@ source:
   fn: PySide-1.1.2.win-amd64-py3.3.exe       [win64 and py33]
 
 build:
-  number: 4    [linux]
+  number: 5    [linux]
   number: 4    [osx]
 
 requirements:
