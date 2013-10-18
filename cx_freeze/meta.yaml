@@ -6,7 +6,7 @@ source:
   fn: cx_Freeze-4.3.1.tar.gz [unix]
   url: http://downloads.sourceforge.net/project/cx-freeze/4.3.1/cx_Freeze-4.3.1.tar.gz?r=&ts=1381152643&use_mirror=dfn
   
-  url: file:\\E:\pyzodistrofiles\conda-package-sources\cx_Freeze-4.3.1.win-amd64-py3.3.zip [win64 and py33]
+  url: file:\\F:\pyzodistrofiles\conda-package-sources\cx_Freeze-4.3.1.win-amd64-py3.3.zip [win64 and py33]
   fn: cx_Freeze-4.3.1.win-amd64-py3.3.zip [win64 and py33]
   url: file:\\E:\pyzodistrofiles\conda-package-sources\cx_Freeze-4.3.1.win32-py3.3.zip [win32 and py33]
   fn: cx_Freeze-4.3.1.win32-py3.3.zip [win32 and py33]
