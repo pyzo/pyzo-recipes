@@ -1,8 +1,9 @@
-"%PYTHON%" setup.py install
-if errorlevel 1 exit 1
+"c:\Program Files\7-Zip\7z.exe" x -otmp -aos cx_Freeze-4.3.1.win32-py3.3.exe
 
-:: Add more build steps here, if they are necessary.
+xcopy tmp\PLATLIB %SP_DIR% /E /I
+xcopy tmp\SCRIPTS %SCRIPTS% /E /I
 
-:: See
-:: http://docs.continuum.io/conda/build.html
-:: for a list of environment variables that are set during the build process.
+REM if "%PY3K%"=="1" (
+REM     %SYS_PREFIX%\Scripts\prepend-dlls %SP_DIR%\cx_Freeze\__init__.py
+REM     if errorlevel 1 exit 1
+REM )
