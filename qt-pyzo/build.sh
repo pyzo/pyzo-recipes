@@ -5,7 +5,7 @@ if [ `uname` == Linux ]; then
     
     sudo apt-get -y install gcc g++
     sudo apt-get -y install libXext-dev libXrender-dev libX11-dev
-    sudo apt-get -y install libgtk2.0-dev
+    #sudo apt-get -y install libgtk2.0-dev (if enabled gtkstyle seems enabled by default
     sudo apt-get -y install libfontconfig-dev libfreetype6-dev
     sudo apt-get -y install libgl1-mesa-dev libglu1-mesa-dev
     sudo apt-get -y install libz-dev libbz2-dev liblzma-dev lzma-dev
