@@ -1,11 +1,11 @@
 package:
   name: pyzolib
-  version: 0.2.5
+  version: 0.2.6
 
 source:
-  fn: pyzolib-0.2.5.tar.gz
-  url: https://pypi.python.org/packages/source/p/pyzolib/pyzolib-0.2.5.tar.gz
-  md5: f5718b584f3467490674e17d631cb8dd
+  fn: pyzolib-0.2.6.tar.gz
+  url: https://pypi.python.org/packages/source/p/pyzolib/pyzolib-0.2.6.tar.gz
+  md5: f68ceebeeea8087a0cfaf8d4a6ce14ef
 
 requirements:
   build:
