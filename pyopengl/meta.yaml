@@ -3,9 +3,12 @@ package:
   version: 3.0.2
 
 source:
-  fn: PyOpenGL-3.0.2.zip
-  url: https://pypi.python.org/packages/source/P/PyOpenGL/PyOpenGL-3.0.2.zip
-  md5: 327d3f5af3ef779931fbf465d059a14e
+  fn: PyOpenGL-3.0.2.tar.gz
+  url: https://pypi.python.org/packages/source/P/PyOpenGL/PyOpenGL-3.0.2.tar.gz
+  md5: 77becc24ffc0a6b28030aa109ad7ff8b
+
+build:
+  number: 2
 
 requirements:
   build:
