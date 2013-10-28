@@ -21,6 +21,6 @@ test:
   #  - imageio I believe it (conda will not include numpy in test env)
 
 about:
-  home: http://pyopengl.sourceforge.net
+  home: http://imageio.readthedocs.org
   license: BSD
 
