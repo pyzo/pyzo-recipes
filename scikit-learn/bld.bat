@@ -9,3 +9,5 @@ if defined ProgramFiles(x86) (
 
 xcopy tmp\PLATLIB %SP_DIR% /E /I
 REM no scripts for sklearn xcopy tmp\SCRIPTS %SCRIPTS% /E /I
+
+if errorlevel 1 exit 1
