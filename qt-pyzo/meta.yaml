@@ -1,0 +1,28 @@
+# This is purely a build script to build system qt. 
+# No need to upload to binstar.
+# It is convenient, because conda downloads the file for
+# me and then runs my build script :)
+
+package:
+  name: qt-pyzo
+  version: 4.8.5
+
+source:
+  fn: qt-everywhere-opensource-src-4.8.5.tar.gz [linux]
+  url: http://download.qt-project.org/official_releases/qt/4.8/4.8.5/qt-everywhere-opensource-src-4.8.5.tar.gz
+  md5: 1864987bdbb2f58f8ae8b350dfdbe133
+  patches:
+    - acceptance.patch [linux]
+    #- 10.5.patch [osx]
+
+build:
+  number: 0    [linux]
+  number: 1    [osx]
+
+requirements:
+  build:
+    - freetype
+
+about:
+    home: http://qt-project.org
+    license: LGPL

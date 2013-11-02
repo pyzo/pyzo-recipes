@@ -1,0 +1,30 @@
+package:
+  name: pyzolib
+  version: 0.2.6
+
+source:
+  fn: pyzolib-0.2.6.tar.gz
+  url: https://pypi.python.org/packages/source/p/pyzolib/pyzolib-0.2.6.tar.gz
+  md5: f68ceebeeea8087a0cfaf8d4a6ce14ef
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+
+test:
+  # Python imports
+  imports:
+    - pyzolib
+    - pyzolib.path
+    - pyzolib.paths
+    - pyzolib.qt
+    - pyzolib.interpreters
+
+
+about:
+  home: http://bitbucket.org/pyzo/pyzolib
+  license: BSD
+

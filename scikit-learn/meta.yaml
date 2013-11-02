@@ -1,0 +1,35 @@
+package:
+  name: scikit-learn
+  version: 0.14.1
+
+source:
+  fn: scikit-learn-0.14.1.tar.gz [unix]
+  url: https://pypi.python.org/packages/source/s/scikit-learn/scikit-learn-0.14.1.tar.gz
+  
+  url: file:\\F:\pyzodistrofiles\conda-package-sources\scikit-learn-0.14.1.win-amd64-py3.3.zip [win64 and py33]
+  fn: scikit-learn-0.14.1.win-amd64-py3.3.zip [win64 and py33]
+  url: file:\\E:\pyzodistrofiles\conda-package-sources\scikit-learn-0.14.1.win32-py3.3.zip [win32 and py33]
+  fn: scikit-learn-0.14.1.win32-py3.3.zip [win32 and py33]
+
+requirements:
+  build:
+    - python
+    - numpy
+    - scipy
+
+  run:
+    - python
+    - numpy
+    - scipy
+
+test:
+  # Python imports
+  imports:
+    - sklearn
+
+about:
+  home: http://scikit-learn.org
+  license: new BSD
+  
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
