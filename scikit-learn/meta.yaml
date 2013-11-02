@@ -3,7 +3,7 @@ package:
   version: 0.14.1
 
 source:
-  fn: cx_Freeze-4.3.1.tar.gz [unix]
+  fn: scikit-learn-0.14.1.tar.gz [unix]
   url: https://pypi.python.org/packages/source/s/scikit-learn/scikit-learn-0.14.1.tar.gz
   
   url: file:\\F:\pyzodistrofiles\conda-package-sources\scikit-learn-0.14.1.win-amd64-py3.3.zip [win64 and py33]
