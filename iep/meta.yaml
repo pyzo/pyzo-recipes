@@ -1,11 +1,11 @@
 package:
   name: iep
-  version: 3.3
+  version: 3.3.1
 
 source:
-  fn: iep-3.3.tar.gz
-  url: https://pypi.python.org/packages/source/i/iep/iep-3.3.tar.gz
-  md5: 2d58a250523409dd1567672c70f1fe15
+  fn: iep-3.3.1.tar.gz
+  url: https://pypi.python.org/packages/source/i/iep/iep-3.3.1.tar.gz
+  md5: b2271ddaf880b49a4bac55172f191148
 
 requirements:
   build:
