@@ -1,0 +1,43 @@
+package:
+  name: scikit-image-dev
+  version: 0.10dev
+
+# NOTES FOR Win64:
+#  
+# in skimage/exposure/unwrap_3d_ljmu.c and unwrap_2d_ljmu.c add:
+# #define M_PI 3.14159265358979323846
+# 
+# Start terminal and run these lines before running the build:
+# setenv /x64 /release 
+# set DISTUTILS_USE_SDK=1 
+# set MSSdk=1
+
+source:
+
+
+requirements:
+  build:
+    - python
+    - numpy
+    - scipy
+    - distribute
+    - cython
+    - six
+
+  run:
+    - python
+    - numpy
+    - scipy
+    - six
+
+test:
+  # Python imports
+  imports:
+    - skimage
+
+about:
+  home: http://scikit-image.org
+  license: new BSD
+
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
