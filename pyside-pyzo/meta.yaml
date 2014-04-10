@@ -6,10 +6,10 @@ source:
   fn: PySide-1.2.1.tar.gz       [unix]
   url: http://download.qt-project.org/official_releases/pyside/PySide-1.2.1.tar.gz              [unix]
   
-  url: file:\\E:\pyzodistrofiles\conda-package-sources\PySide-1.2.1.win32-py3.3.zip  [win32]
-  fn: PySide-1.2.1.win32-py3.3.zip           [win32 and py33]
-  url: file:\\F:\pyzodistrofiles\conda-package-sources\PySide-1.2.1.win-amd64-py3.3.zip  [win64]
-  fn: PySide-1.2.1.win-amd64-py3.3.zip       [win64 and py33]
+  url: file:\\E:\pyzodistrofiles\conda-package-sources\PySide-1.2.1.win32-py3.4.zip  [win32]
+  fn: PySide-1.2.1.win32-py3.4.zip           [win32 and py34]
+  url: file:\\F:\pyzodistrofiles\conda-package-sources\PySide-1.2.1.win-amd64-py3.4.zip  [win64]
+  fn: PySide-1.2.1.win-amd64-py3.4.zip       [win64 and py34
 
 build:
   number: 6    [linux]

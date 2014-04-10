@@ -58,7 +58,7 @@ set -e
 $PYTHON -c '
 import sys, os, sysconfig
 incl_dir = sysconfig.get_path("include")
-lib_dir = sys.prefix + "/lib/libpython3.3m.so"
+lib_dir = sys.prefix + "/lib/libpython3.4m.so"
 if not os.path.isfile(lib_dir):
   lib_dir = lib_dir.replace(".so",".dylib")
 print("Patching build/CMakeCache.txt ...")

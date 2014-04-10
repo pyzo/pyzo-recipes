@@ -1,15 +1,15 @@
 package:
   name: cx_freeze
-  version: 4.3.1
+  version: 4.3.2
 
 source:
-  fn: cx_Freeze-4.3.1.tar.gz [unix]
-  url: http://downloads.sourceforge.net/project/cx-freeze/4.3.1/cx_Freeze-4.3.1.tar.gz?r=&ts=1381152643&use_mirror=dfn
+  fn: cx_Freeze-4.3.2.tar.gz [unix]
+  url: http://downloads.sourceforge.net/project/cx-freeze/4.3.2/cx_Freeze-4.3.2.tar.gz?r=&ts=1397127682&use_mirror=heanet
   
-  url: file:\\F:\pyzodistrofiles\conda-package-sources\cx_Freeze-4.3.1.win-amd64-py3.3.zip [win64 and py33]
-  fn: cx_Freeze-4.3.1.win-amd64-py3.3.zip [win64 and py33]
-  url: file:\\E:\pyzodistrofiles\conda-package-sources\cx_Freeze-4.3.1.win32-py3.3.zip [win32 and py33]
-  fn: cx_Freeze-4.3.1.win32-py3.3.zip [win32 and py33]
+  url: file:\\F:\pyzodistrofiles\conda-package-sources\cx_Freeze-4.3.2.win-amd64-py3.3.zip [win64 and py34]
+  fn: cx_Freeze-4.3.2.win-amd64-py3.3.zip [win64 and py34]
+  url: file:\\E:\pyzodistrofiles\conda-package-sources\cx_Freeze-4.3.2.win32-py3.3.zip [win32 and py34]
+  fn: cx_Freeze-4.3.2.win32-py3.3.zip [win32 and py34]
 
 requirements:
   build:
