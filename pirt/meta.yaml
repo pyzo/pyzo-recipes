@@ -1,0 +1,42 @@
+package:
+  name: pirt
+  version: 2.0
+
+# NOTES FOR Win64:
+#  
+# in skimage/exposure/unwrap_3d_ljmu.c and unwrap_2d_ljmu.c add:
+# #define M_PI 3.14159265358979323846
+# 
+# Start terminal and run these lines before running the build:
+# setenv /x64 /release 
+# set DISTUTILS_USE_SDK=1 
+# set MSSdk=1
+
+source:
+
+
+requirements:
+  build:
+    - python
+    - numpy
+    - scipy
+    - distribute
+    - cython
+
+  run:
+    - python
+    - numpy
+    - scipy
+    - visvis
+
+test:
+  # Python imports
+  imports:
+    - pirt
+
+about:
+  home: http://bitbucket.org/almarklein/pirt
+  license: new BSD
+
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
