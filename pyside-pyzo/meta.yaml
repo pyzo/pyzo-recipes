@@ -1,20 +1,20 @@
 package:
   name: pyside-pyzo
-  version: 1.2.1
+  version: 1.2.2
 
 source:
-  fn: PySide-1.2.1.tar.gz       [unix]
-  url: http://download.qt-project.org/official_releases/pyside/PySide-1.2.1.tar.gz              [unix]
+  fn: PySide-1.2.2.tar.gz       [unix]
+  url: http://download.qt-project.org/official_releases/pyside/PySide-1.2.2.tar.gz              [unix]
   
-  url: file:\\E:\pyzodistrofiles\conda-package-sources\PySide-1.2.1.win32-py3.4.zip  [win32]
-  fn: PySide-1.2.1.win32-py3.4.zip           [win32]
-  url: file:\\F:\pyzodistrofiles\conda-package-sources\PySide-1.2.1.win-amd64-py3.4.zip  [win64]
-  fn: PySide-1.2.1.win-amd64-py3.4.zip       [win64]
+  url: https://dl.dropboxusercontent.com/u/1463853/conda-package-sources/PySide-1.2.2.win32-py3.4.zip [win32]
+  fn: PySide-1.2.2.win32-py3.4.zip           [win32]
+  url: https://dl.dropboxusercontent.com/u/1463853/conda-package-sources/PySide-1.2.2.win-amd64-py3.4.zip  [win64]
+  fn: PySide-1.2.2.win-amd64-py3.4.zip       [win64]
 
 build:
   number: 6    [linux]
   number: 4    [osx]
-  number: 1    [win]
+  number: 2    [win]
 
 requirements:
   build:
