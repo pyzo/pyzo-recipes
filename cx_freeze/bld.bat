@@ -1,9 +1,9 @@
 
 if defined ProgramFiles(x86) (
-    "c:\Program Files\7-Zip\7z.exe" x -otmp -aos cx_Freeze-4.3.1.win-amd64-py3.3.exe
+    "c:\Program Files\7-Zip\7z.exe" x -otmp -aos cx_Freeze-4.3.3.win-amd64-py3.4.exe
 
 ) else (
-    "c:\Program Files\7-Zip\7z.exe" x -otmp -aos cx_Freeze-4.3.1.win32-py3.3.exe
+    "c:\Program Files\7-Zip\7z.exe" x -otmp -aos cx_Freeze-4.3.3.win32-py3.4.exe
 
 )
 

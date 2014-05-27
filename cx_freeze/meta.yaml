@@ -4,13 +4,14 @@ package:
 
 source:
   fn: cx_Freeze-4.3.3.tar.gz [unix]
-  url: https://pypi.python.org/packages/source/c/cx_Freeze/cx_Freeze-4.3.3.tar.gz
-  md5: 3cae24b98694540eb083ac500c0d4aa1
+  url: https://pypi.python.org/packages/source/c/cx_Freeze/cx_Freeze-4.3.3.tar.gz [unix]
+  md5: 3cae24b98694540eb083ac500c0d4aa1 [unix]
   
-  url: file:\\F:\pyzodistrofiles\conda-package-sources\cx_Freeze-4.3.3.win-amd64-py3.4.zip [win64 and py34]
-  fn: cx_Freeze-4.3.3.win-amd64-py3.4.zip [win64 and py34]
-  url: file:\\E:\pyzodistrofiles\conda-package-sources\cx_Freeze-4.3.4.win32-py3.4.zip [win32 and py34]
-  fn: cx_Freeze-4.3.3.win32-py3.3.zip [win32 and py34]
+  url: https://dl.dropboxusercontent.com/u/1463853/conda-package-sources/cx_Freeze-4.3.3.win32-py3.4.zip [win32]
+  fn: cx_Freeze-4.3.3.win32-py3.4.zip [win32]
+  url: hhttps://dl.dropboxusercontent.com/u/1463853/conda-package-sources/cx_Freeze-4.3.3.win-amd64-py3.4.zip [win64]
+  fn: ccx_Freeze-4.3.3.win-amd64-py3.4.zip [win64]
+  
 
 requirements:
   build:
