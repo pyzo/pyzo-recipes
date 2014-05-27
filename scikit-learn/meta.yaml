@@ -1,15 +1,16 @@
 package:
   name: scikit-learn
-  version: 0.14.1
+  version: 0.15
 
 source:
   fn: scikit-learn-0.14.1.tar.gz [unix]
   url: https://pypi.python.org/packages/source/s/scikit-learn/scikit-learn-0.14.1.tar.gz
   
-  url: file:\\F:\pyzodistrofiles\conda-package-sources\scikit-learn-0.14.1.win-amd64-py3.3.zip [win64 and py33]
-  fn: scikit-learn-0.14.1.win-amd64-py3.3.zip [win64 and py33]
-  url: file:\\E:\pyzodistrofiles\conda-package-sources\scikit-learn-0.14.1.win32-py3.3.zip [win32 and py33]
-  fn: scikit-learn-0.14.1.win32-py3.3.zip [win32 and py33]
+  url: https://dl.dropboxusercontent.com/u/1463853/conda-package-sources/scikit-learn-0.15-git.win32-py3.4.zip [win32]
+  fn: scikit-learn-0.15-git.win32-py3.4.zip  [win32]
+  url: https://dl.dropboxusercontent.com/u/1463853/conda-package-sources/scikit-learn-0.15-git.win-amd64-py3.4.zip [win64]
+  fn: scikit-learn-0.15-git.win-amd64-py3.4.zip [win64]
+  
 
 requirements:
   build:
