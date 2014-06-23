@@ -7,8 +7,11 @@ source:
   url: https://pypi.python.org/packages/source/c/cx_Freeze/cx_Freeze-4.3.3.tar.gz [unix]
   md5: 3cae24b98694540eb083ac500c0d4aa1 [unix]
   
-  url: https://bitbucket.org/anthony_tuininga/cx_freeze/get/tip.zip [osx]
-  fn: tip.zip [osx]
+  # Note that on OSX we grab the installed version!
+  # We need to update the pip-installed version accordingly.
+  #
+  #url: https://bitbucket.org/anthony_tuininga/cx_freeze/get/tip.zip [osx]
+  #fn: tip.zip [osx]
   
   url: https://dl.dropboxusercontent.com/u/1463853/conda-package-sources/cx_Freeze-4.3.3.win32-py3.4.zip [win32]
   fn: cx_Freeze-4.3.3.win32-py3.4.zip [win32]
@@ -16,7 +19,7 @@ source:
   fn: ccx_Freeze-4.3.3.win-amd64-py3.4.zip [win64]
   
 build:
-  number: 1
+  number: 4
 
 requirements:
   build:

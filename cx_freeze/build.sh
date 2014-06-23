@@ -16,6 +16,6 @@ if [ `uname` == Darwin ]; then
     python3.3 -c 'import cx_Freeze'
     
     # Install from there
-    $PYTHON $RECIPE_DIR/../pyside-pyzo/build_from_installed.py /opt/local/Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/site-packages/cx_Freeze
+    $PYTHON $RECIPE_DIR/../pyside-pyzo/build_from_installed.py /opt/local/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/cx_Freeze
     
 fi
