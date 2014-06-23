@@ -1,0 +1,28 @@
+package:
+  name: pyopengl
+  version: 3.1.0b3
+
+source:
+  fn: PyOpenGL-3.1.0b3.tar.gz
+  url: https://pypi.python.org/packages/source/P/PyOpenGL/PyOpenGL-3.1.0b3.tar.gz
+  md5: f0f4d45b0c17cf143f97fd93b9485e90
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+
+test:
+  # Python imports
+  imports:
+    - OpenGL.GL
+
+about:
+  home: http://pyopengl.sourceforge.net
+  license: BSD
+

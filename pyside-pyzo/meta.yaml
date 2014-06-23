@@ -1,0 +1,33 @@
+package:
+  name: pyside-pyzo
+  version: 1.2.2
+
+source:
+  fn: PySide-1.2.2.tar.gz       [unix]
+  url: http://download.qt-project.org/official_releases/pyside/PySide-1.2.2.tar.gz              [unix]
+  
+  url: https://dl.dropboxusercontent.com/u/1463853/conda-package-sources/PySide-1.2.2.win32-py3.4.zip [win32]
+  fn: PySide-1.2.2.win32-py3.4.zip           [win32]
+  url: https://dl.dropboxusercontent.com/u/1463853/conda-package-sources/PySide-1.2.2.win-amd64-py3.4.zip  [win64]
+  fn: PySide-1.2.2.win-amd64-py3.4.zip       [win64]
+
+build:
+  number: 6    [linux]
+  number: 4    [osx]
+  number: 2    [win]
+
+requirements:
+  build:
+    - cmake     [unix]
+    #- qt        [linux]  # Not on Mac, maybe do same approach on Linux?
+    - libpng    [linux]
+    - python
+  run:
+    #- qt        [linux]
+    - libpng    [linux]
+    - python
+    #- python.app  [osx]
+
+about:
+    home: https://pypi.python.org/pypi/PySide
+    license: LGPL

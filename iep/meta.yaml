@@ -1,0 +1,28 @@
+package:
+  name: iep
+  version: 3.4
+
+source:
+  fn: iep-3.4.tar.gz
+  url: https://pypi.python.org/packages/source/i/iep/iep-3.4.tar.gz
+  md5: 253774cd8d508d78eeb61dee422a32ea
+
+requirements:
+  build:
+    - python
+
+  run:
+    - pyzolib
+    - python
+
+test:
+  # Python imports
+  imports:
+    # We would need either pyside or pyqt4, so we can not really test
+    #- iep
+
+
+about:
+  home: http://iep-project.org
+  license: BSD
+

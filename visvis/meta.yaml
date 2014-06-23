@@ -1,0 +1,34 @@
+package:
+  name: visvis
+  version: 1.9.1
+
+source:
+  fn: visvis-1.9.1.tar.gz
+  url: https://pypi.python.org/packages/source/v/visvis/visvis-1.9.1.tar.gz
+  md5: c325103786392b77b4cb4fef652880d5
+
+build:
+  number: 1
+  
+requirements:
+  build:
+    - pyzolib
+    - cython
+    - pyopengl
+    - numpy
+    - python
+
+  run:
+    #- numpy do not put here, since conda will stick it to a specific version
+    - pyopengl
+    - python
+  
+test:
+  # Python imports
+  imports:
+  #  - visvis I believe it (conda will not include numpy in test env)
+
+about:
+  home: http://code.google.com/p/visvis/
+  license: BSD
+

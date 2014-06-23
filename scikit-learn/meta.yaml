@@ -1,0 +1,36 @@
+package:
+  name: scikit-learn
+  version: 0.15
+
+source:
+  fn: scikit-learn-0.14.1.tar.gz [unix]
+  url: https://pypi.python.org/packages/source/s/scikit-learn/scikit-learn-0.14.1.tar.gz
+  
+  url: https://dl.dropboxusercontent.com/u/1463853/conda-package-sources/scikit-learn-0.15-git.win32-py3.4.zip [win32]
+  fn: scikit-learn-0.15-git.win32-py3.4.zip  [win32]
+  url: https://dl.dropboxusercontent.com/u/1463853/conda-package-sources/scikit-learn-0.15-git.win-amd64-py3.4.zip [win64]
+  fn: scikit-learn-0.15-git.win-amd64-py3.4.zip [win64]
+  
+
+requirements:
+  build:
+    - python
+    - numpy
+    - scipy
+
+  run:
+    - python
+    - numpy
+    - scipy
+
+test:
+  # Python imports
+  imports:
+    - sklearn
+
+about:
+  home: http://scikit-learn.org
+  license: new BSD
+  
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
