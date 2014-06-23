@@ -3,9 +3,9 @@ package:
   version: 0.3.1
 
 source:
-  fn: pyzolib-0.3.1.tar.gz
-  url: https://pypi.python.org/packages/source/p/pyzolib/pyzolib-0.3.1.tar.gz
-  md5: f59a6a372595b85915b7dbe435a01f20
+  fn: pyzolib-0.3.2.tar.gz
+  url: https://pypi.python.org/packages/source/p/pyzolib/pyzolib-0.3.2.tar.gz
+  #md5: f59a6a372595b85915b7dbe435a01f20
 
 requirements:
   build:
