@@ -3,7 +3,7 @@ package:
   version: 0.5.1
 
 source:
-  fn: imageio-0.5.tar.gz
+  fn: imageio-0.5.1.tar.gz
   url: https://pypi.python.org/packages/source/i/imageio/imageio-0.5.1.tar.gz
   #md5: f002efc78e07b0925d0e2acbe5de0205
 
