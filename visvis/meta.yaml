@@ -1,11 +1,11 @@
 package:
   name: visvis
-  version: 1.9
+  version: 1.9.1
 
 source:
-  fn: visvis-1.9.tar.gz
-  url: https://pypi.python.org/packages/source/v/visvis/visvis-1.9.tar.gz
-  md5: 067dd6ff4c41acd8b2c4cc2aa77a565a
+  fn: visvis-1.9.1.tar.gz
+  url: https://pypi.python.org/packages/source/v/visvis/visvis-1.9.1.tar.gz
+  md5: c325103786392b77b4cb4fef652880d5
 
 build:
   number: 1
