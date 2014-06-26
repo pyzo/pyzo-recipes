@@ -4,6 +4,8 @@ REM use this to set release: setenv /x64 /release
 
 REM Prepare for compiling with MS SDK
 %PYTHON% %RECIPE_DIR%\patch_for_utils_compile.py
+
+REM These must be commented on win32
 set MSSdk=1
 set DISTUTILS_USE_SDK=1
 
