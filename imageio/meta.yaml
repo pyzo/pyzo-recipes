@@ -1,11 +1,11 @@
 package:
   name: imageio
-  version: 0.5.1
+  version: 1.1
 
 source:
-  fn: imageio-0.5.1.tar.gz
-  url: https://pypi.python.org/packages/source/i/imageio/imageio-0.5.1.tar.gz
-  #md5: f002efc78e07b0925d0e2acbe5de0205
+  fn: imageio-1.1.zip
+  url: https://pypi.python.org/packages/source/i/imageio/imageio-1.1.zip
+  #md5: fcdfa0d13d7ce2cf06f2f34f8cae3c19
 
 requirements:
   build:
