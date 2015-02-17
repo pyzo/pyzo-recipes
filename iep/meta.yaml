@@ -7,8 +7,12 @@ source:
   url: https://pypi.python.org/packages/source/i/iep/iep-3.6.tar.gz
   md5: ebd7fee35decb1a472839825c6b7feb9
 
+build:
+  number: 2
+
 requirements:
   build:
+    - pyzolib
     - python
 
   run:
