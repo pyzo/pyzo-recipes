@@ -27,12 +27,13 @@ requirements:
     #- numpy do not put here, since conda will stick it to a specific version
     - python
   
-  test:
-    - python
-    - numpy
-  
+
 test:
-  # Python imports
+  
+  requires:
+    - numpy
+    - pytest
+  
   imports:
     - imageio
 
