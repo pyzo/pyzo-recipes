@@ -1,11 +1,23 @@
 package:
   name: imageio
-  version: 1.1
+  version: 1.2
 
 source:
-  fn: imageio-1.1.zip
-  url: https://pypi.python.org/packages/source/i/imageio/imageio-1.1.zip
-  #md5: fcdfa0d13d7ce2cf06f2f34f8cae3c19
+  fn: imageio-1.2-linux32.zip  [linux32]
+  url: https://pypi.python.org/packages/source/i/imageio/imageio-1.2-linux32.zip  [linux32]
+  
+  fn: imageio-1.2-linux64.zip  [linux64]
+  url: https://pypi.python.org/packages/source/i/imageio/imageio-1.2-linux64.zip  [linux64]
+  
+  fn: imageio-1.2-osx64.zip  [osx]
+  url: https://pypi.python.org/packages/source/i/imageio/imageio-1.2-osx64.zip  [osx]
+  
+  fn: imageio-1.2-win32.zip  [win32]
+  url: https://pypi.python.org/packages/source/i/imageio/imageio-1.2-win32.zip  [win32]
+  
+  fn: imageio-1.2-win64.zip  [win64]
+  url: https://pypi.python.org/packages/source/i/imageio/imageio-1.2-win64.zip  [win64]
+
 
 requirements:
   build:
@@ -15,10 +27,14 @@ requirements:
     #- numpy do not put here, since conda will stick it to a specific version
     - python
   
+  test:
+    - python
+    - numpy
+  
 test:
   # Python imports
   imports:
-  #  - imageio I believe it (conda will not include numpy in test env)
+    - imageio
 
 about:
   home: http://imageio.readthedocs.org
