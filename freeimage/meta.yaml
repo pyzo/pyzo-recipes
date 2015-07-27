@@ -1,0 +1,21 @@
+package:
+    name: freeimage
+    version: 3.17.0
+    # note: also update version in run_test.py
+
+source:
+    fn: FreeImage3170.zip
+    url: http://optimate.dl.sourceforge.net/project/freeimage/Source%20Distribution/3.17.0/FreeImage3170.zip
+
+build:
+    number: 0
+
+test:
+    requires:
+        - python
+    commands:
+        - python run_test.py
+
+about:
+    home: http://freeimage.sourceforge.net/
+    license: GPLv2 and FreeImage Public License
