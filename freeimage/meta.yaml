@@ -2,13 +2,22 @@ package:
     name: freeimage
     version: 3.17.0
     # note: also update version in run_test.py
+    # note: On windows, needs VCOMP120.DLL, so this needs to be installed:
+    #   http://www.microsoft.com/en-us/download/details.aspx?id=40784
 
 source:
     fn: FreeImage3170.zip
+    fn: FreeImage3170Win32Win64.zip [win]
     url: http://optimate.dl.sourceforge.net/project/freeimage/Source%20Distribution/3.17.0/FreeImage3170.zip
+    url: http://optimate.dl.sourceforge.net/project/freeimage/Binary%20Distribution/3.17.0/FreeImage3170Win32Win64.zip [win]
+
 
 build:
     number: 0
+
+#requirements:
+#    build:
+#        - mingw [win]
 
 test:
     requires:
